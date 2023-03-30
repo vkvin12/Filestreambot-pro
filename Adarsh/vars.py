@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://vinit12:<password>@cluster0.okyrgql.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', '-1001709437849'))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'flexetix'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
